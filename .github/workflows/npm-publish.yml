@@ -3,9 +3,9 @@
 
 name: Node.js Package
 on:
-  push:
-   tags:
-     - 'v*'
+push:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,6 +26,12 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+         uses: pascalgn/npm-publish-action@06e0830ea83eea10ed4a62654eeaedafb8bf50fc
+        with: # All of theses inputs are optional
+          tag_name: "v%s"
+          tag_message: "v%s"
+          commit_pattern: "^Release (\\S+)"
+          workspace: "."
       - run: npm ci
       - run: npm publish --access public
         env:
