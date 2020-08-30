@@ -62,13 +62,12 @@ exports.getRandomWord = function () {
 exports.getWord = function (length, letters) {
   checkLength(length, words);
   let wordsByLength = filterWordsByLength(words, length);
-  for (let i = 0; i < letters.length; i++) {
-    const e = letters[i];
+  letters.forEach((e) => {
     const wordsByLengthFiltered = wordsByLength.filter((s) => s.includes(e));
     if (wordsByLengthFiltered.length < 1) {
       return getRandomWord(wordsByLength);
     }
     wordsByLength = wordsByLengthFiltered;
-  }
+  });
   return getRandomWord(wordsByLength);
 };
