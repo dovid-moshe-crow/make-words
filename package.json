@@ -1,10 +1,10 @@
 {
   "name": "make-words",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "generate random words",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/dovid-moshe-crow/make-words/issues"
   },
-  "homepage": "https://github.com/dovid-moshe-crow/make-words#readme"
+  "homepage": "https://github.com/dovid-moshe-crow/make-words#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "jest": "^26.4.2"
+  },
+  "dependencies": {}
 }
