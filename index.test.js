@@ -35,15 +35,15 @@ describe("#getRandomWord", () => {
   });
 });
 
-describe('#getWord', () => {
-  test('should return a string that contains the letter ק of length 5', () => {
-    expect(getWord(5,['ק'])).toContain('ק');
-  })
+describe("#getWord", () => {
+  test("should return a string that contains the letter ק of length 5", () => {
+    expect(getWord(5, ["ק"])).toContain("ק");
+  });
 
-  test('should return a string the contains the letters א and ב but not ג', () => {
-    expect(getWord(2,['א','ב','ג'])).toHaveLength(2);
-    expect(getWord(2,['א','ב','ג'])).toContain('א');
-    expect(getWord(2,['א','ב','ג'])).toContain('ב');
-    expect(getWord(2,['א','ב','ג'])).not.toContain('ג');
-  })
-})
+  test("should return a string the contains the letters א and ב but not ג", () => {
+    expect(getWord(2, ["א", "ב", "ג"])).toHaveLength(2);
+    expect(getWord(2, ["א", "ב", "ג"])).toContain("א");
+    expect(getWord(2, ["א", "ב", "ג"])).toContain("ב");
+    expect(getWord(2, ["א", "ב", "ג"])).not.toContain("ג");
+  });
+});
