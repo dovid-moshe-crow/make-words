@@ -16,7 +16,7 @@ npm i make-words
 
 <dl>
 <dt><a href="#getWordByLength">getWordByLength(length)</a> ⇒ <code>string</code></dt>
-<dd><p>get all words the have a specific length</p>
+<dd><p>get all words thet have a specific length</p>
 </dd>
 <dt><a href="#getRandomWord">getRandomWord()</a> ⇒ <code>string</code></dt>
 <dd><p>get a random word from the dataset</p>
