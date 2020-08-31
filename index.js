@@ -107,7 +107,7 @@ function filterWordsByLength(words, length) {
 }
 
 /**
- * get all words the have a specific length
+ * get all words thet have a specific length
  * @param {number} length
  * @returns {string}
  */
