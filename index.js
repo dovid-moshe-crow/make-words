@@ -1,7 +1,8 @@
 const { words, letters } = require("./hebrew");
 
 /**
- *
+ * get the longest word in the dataset
+ * @private
  * @param {string[]} words
  */
 function getLongestWordLength(words) {
@@ -9,7 +10,8 @@ function getLongestWordLength(words) {
 }
 
 /**
- *
+ * check that the length of the word exists in the dataset
+ * @private
  * @param {nubmer} length
  * @param {string[]} words
  */
@@ -25,7 +27,8 @@ function checkLength(length, words) {
 }
 
 /**
- *
+ * filter words that contain specific charecters
+ * @private
  * @param {string[]} words
  * @param {string[]} excludeChars
  */
@@ -34,6 +37,8 @@ function excludeCharsFromWords(words, excludeChars = []) {
 }
 
 /**
+ * get a random word from the dataset
+ * @private
  * @param {string[]} words
  * @returns {string}
  */
@@ -42,7 +47,8 @@ function getRandomWord(words) {
 }
 
 /**
- *
+ * filter the words by length
+ * @private
  * @param {string[]} words
  * @param {number} length
  * @returns {string[]}
@@ -52,7 +58,7 @@ function filterWordsByLength(words, length) {
 }
 
 /**
- *
+ * get all words the have a specific length
  * @param {number} length
  * @returns {string}
  */
@@ -62,6 +68,7 @@ exports.getWordByLength = function (length) {
 };
 
 /**
+ * get a random word from the dataset
  * @returns {string}
  */
 exports.getRandomWord = function () {
@@ -69,7 +76,7 @@ exports.getRandomWord = function () {
 };
 
 /**
- *
+ * get a word that has a specific length and that includes the most letters possible from the letters array
  * @param {number} length
  * @param {string[]} letters
  * @param {string[]} excludeChars
