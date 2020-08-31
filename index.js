@@ -9,9 +9,9 @@ function getLongestWordLength(words) {
 }
 
 /**
- * 
- * @param {nubmer} length 
- * @param {string[]} words 
+ *
+ * @param {nubmer} length
+ * @param {string[]} words
  */
 function checkLength(length, words) {
   if (typeof length !== "number" || length <= 0) {
