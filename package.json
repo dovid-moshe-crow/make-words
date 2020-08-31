@@ -1,11 +1,10 @@
 {
   "name": "make-words",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "generate random words",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage",
-    "docs": "jsdoc2md --template README.hbs --files index.js > README.md"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
