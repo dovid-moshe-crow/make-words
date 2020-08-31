@@ -33,7 +33,7 @@ npm i make-words
 
 ## getWordByLength(length) ⇒ <code>string</code>
 
-get all words the have a specific length
+get all words thet have a specific length
 
 **Kind**: global function
 
