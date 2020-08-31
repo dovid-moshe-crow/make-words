@@ -162,6 +162,7 @@ exports.getWord = function (length, letters, excludeChars, mustHaveLetter) {
  * @param {string[]} letters
  * @param {string[]} excludeChars
  * @param {string} [mustHaveLetter]
+ * @returns {string[]}
  */
 exports.getWords = function (
   count,
