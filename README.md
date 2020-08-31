@@ -56,11 +56,11 @@ get a word that has a specific length and that includes the most letters possibl
 
 **Kind**: global function
 
-| Param            | Type                              |
-| ---------------- | --------------------------------- |
-| length           | <code>number</code>               |
-| letters          | <code>Array.&lt;string&gt;</code> |
-| excludeChars     | <code>Array.&lt;string&gt;</code> |
+| Param              | Type                              |
+| ------------------ | --------------------------------- |
+| length             | <code>number</code>               |
+| letters            | <code>Array.&lt;string&gt;</code> |
+| excludeChars       | <code>Array.&lt;string&gt;</code> |
 | \[mustHaveLetter\] | <code>string</code>               |
 
 <a name="getWords"></a>
@@ -71,13 +71,13 @@ get any number of random words that contain specific letters
 
 **Kind**: global function
 
-| Param            | Type                              |
-| ---------------- | --------------------------------- |
-| count            | <code>number</code>               |
-| minWordLength    | <code>number</code>               |
-| maxWordLength    | <code>number</code>               |
-| letters          | <code>Array.&lt;string&gt;</code> |
-| excludeChars     | <code>Array.&lt;string&gt;</code> |
+| Param              | Type                              |
+| ------------------ | --------------------------------- |
+| count              | <code>number</code>               |
+| minWordLength      | <code>number</code>               |
+| maxWordLength      | <code>number</code>               |
+| letters            | <code>Array.&lt;string&gt;</code> |
+| excludeChars       | <code>Array.&lt;string&gt;</code> |
 | \[mustHaveLetter\] | <code>string</code>               |
 
 ---
