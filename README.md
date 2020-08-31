@@ -50,7 +50,7 @@ get a random word from the dataset
 **Kind**: global function  
 <a name="getWord"></a>
 
-## getWord(length, letters, excludeChars, [mustHaveLetter])
+## getWord(length, letters, excludeChars, \[mustHaveLetter\])
 
 get a word that has a specific length and that includes the most letters possible from the letters array
 
@@ -61,11 +61,11 @@ get a word that has a specific length and that includes the most letters possibl
 | length           | <code>number</code>               |
 | letters          | <code>Array.&lt;string&gt;</code> |
 | excludeChars     | <code>Array.&lt;string&gt;</code> |
-| [mustHaveLetter] | <code>string</code>               |
+| \[mustHaveLetter\] | <code>string</code>               |
 
 <a name="getWords"></a>
 
-## getWords(count, minWordLength, maxWordLength, letters, excludeChars, [mustHaveLetter])
+## getWords(count, minWordLength, maxWordLength, letters, excludeChars, \[mustHaveLetter\])
 
 get any number of random words that contain specific letters
 
@@ -78,7 +78,7 @@ get any number of random words that contain specific letters
 | maxWordLength    | <code>number</code>               |
 | letters          | <code>Array.&lt;string&gt;</code> |
 | excludeChars     | <code>Array.&lt;string&gt;</code> |
-| [mustHaveLetter] | <code>string</code>               |
+| \[mustHaveLetter\] | <code>string</code>               |
 
 ---
 

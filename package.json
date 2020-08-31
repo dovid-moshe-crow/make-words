@@ -24,8 +24,7 @@
   "homepage": "https://github.com/dovid-moshe-crow/make-words#readme",
   "devDependencies": {
     "@types/jest": "^26.0.10",
-    "jest": "^26.4.2",
-    "jsdoc-to-markdown": "^6.0.1"
+    "jest": "^26.4.2"
   },
   "dependencies": {}
 }
