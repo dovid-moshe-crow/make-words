@@ -1,4 +1,4 @@
-const { words } = require("./hebrew");
+const { words, letters } = require("./hebrew");
 
 /**
  *
@@ -8,6 +8,11 @@ function getLongestWordLength(words) {
   return words.sort((a, b) => b.length - a.length)[0].length;
 }
 
+/**
+ * 
+ * @param {nubmer} length 
+ * @param {string[]} words 
+ */
 function checkLength(length, words) {
   if (typeof length !== "number" || length <= 0) {
     throw new Error("length cant be less or equel to zero");
@@ -17,6 +22,15 @@ function checkLength(length, words) {
       throw new Error(`length cant be bigger then ${longestWordLength}`);
     }
   }
+}
+
+/**
+ *
+ * @param {string[]} words
+ * @param {string[]} excludeChars
+ */
+function excludeCharsFromWords(words, excludeChars = []) {
+  return words.filter((x) => ![...x].some((r) => excludeChars.includes(r)));
 }
 
 /**
@@ -58,10 +72,14 @@ exports.getRandomWord = function () {
  *
  * @param {number} length
  * @param {string[]} letters
+ * @param {string[]} excludeChars
  */
-exports.getWord = function (length, letters) {
+exports.getWord = function (length, letters, excludeChars) {
   checkLength(length, words);
-  let wordsByLength = filterWordsByLength(words, length);
+  let wordsByLength = filterWordsByLength(
+    excludeCharsFromWords(words, excludeChars),
+    length
+  );
   letters.forEach((e) => {
     const wordsByLengthFiltered = wordsByLength.filter((s) => s.includes(e));
     if (wordsByLengthFiltered.length < 1) {
@@ -71,3 +89,5 @@ exports.getWord = function (length, letters) {
   });
   return getRandomWord(wordsByLength);
 };
+
+exports.letters = letters;
