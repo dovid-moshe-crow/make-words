@@ -1,4 +1,4 @@
-const { getWordByLength, getRandomWord, getWord } = require("./index");
+const { getWordByLength, getRandomWord, getWord,getWords,otherChars } = require("./index");
 
 describe("#getWordByLength", () => {
   test("should return a string of length 5", () => {
@@ -42,8 +42,15 @@ describe("#getWord", () => {
 
   test("should return a string the contains the letters א and ב but not ג", () => {
     expect(getWord(2, ["א", "ב", "ג"])).toHaveLength(2);
-    expect(getWord(2, ["א", "ב", "ג"])).toContain("א");
-    expect(getWord(2, ["א", "ב", "ג"])).toContain("ב");
-    expect(getWord(2, ["א", "ב", "ג"])).not.toContain("ג");
+    expect(getWord(2, ["א", "ב", "ג"],null,"א")).toContain("א");
+    expect(getWord(2, ["א", "ב", "ג"],null,"ב")).toContain("ב");
+    expect(getWord(2, ["א", "ב", "ג"],null,"ג")).toContain("ג");
   });
 });
+
+describe("#getWords",() => {
+  test("get 20 words",() => {
+    expect(getWords(20,2,8,["א", "ב", "ג"],otherChars,"ב").length).toBe(20);
+    expect(getWords(20,3,3,["א", "ב", "ג"],otherChars,"ב").join("").length).toBe(60);
+  })
+})
