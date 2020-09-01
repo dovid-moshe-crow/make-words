@@ -1,3 +1,5 @@
+"use strict";
+
 const { words, letters, otherChars } = require("./hebrew");
 
 /**
