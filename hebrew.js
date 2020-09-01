@@ -1,3 +1,5 @@
+"use strict";
+
 exports.words = [
   "את",
   "על",
