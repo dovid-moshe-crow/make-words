@@ -7,13 +7,15 @@ declare module "make-words" {
     excludeChars: string[],
     mustHaveLetter?: string
   ): string;
-  export function getWords(count,
+  export function getWords(
+    count,
     minWordLength: number,
     maxWordLength: number,
     letters: string[],
     excludeChars: string[],
-    mustHaveLetter:string) : string[]
+    mustHaveLetter: string
+  ): string[];
 
-  export const otherChars : string[];
-  export const letters : string[];
+  export const otherChars: string[];
+  export const letters: string[];
 }
