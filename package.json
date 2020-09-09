@@ -1,6 +1,6 @@
 {
   "name": "make-words",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "generate random words",
   "main": "index.js",
   "types": "./index.d.ts",
