@@ -6,7 +6,7 @@ generate random words ![Node.js Package](https://github.com/dovid-moshe-crow/mak
 
 ## Installation
 
-Use the package manager [npm](https://www.npmjs.com/package/make-words) to install foobar.
+Use the package manager [npm](https://www.npmjs.com/package/make-words) to install make-words.
 
 ```bash
 npm i make-words
