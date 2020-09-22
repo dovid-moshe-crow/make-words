@@ -13,7 +13,7 @@ declare module "make-words" {
     maxWordLength: number,
     letters: string[],
     excludeChars: string[],
-    mustHaveLetter: string
+    mustHaveLetter?: string
   ): string[];
 
   export const otherChars: string[];
